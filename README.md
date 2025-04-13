@@ -13,7 +13,7 @@ Este repositório contém o código-fonte do clone do Mercado Livre desenvolvido
 
 ## Como rodar localmente
 ```bash
-git clone https://github.com/seuusuario/mercado-livre-dev
+git clone https://github.com/IsaqueSSNogueira/mercado-livre-dev
 cd app-notas-dev
 npm install
 npm run dev
