@@ -1,6 +1,6 @@
 # Mercado Livre Clone
 
-Este repositório contém o código-fonte do clone do Mercado Livre desenvolvido com React e Vite (estava com conexão ruim e não consegui fazer o push ainda, é um projeto que não havia sido postado).
+Este repositório contém o código-fonte do clone do Mercado Livre desenvolvido com React e Vite (estava com conexão ruim e não consegui fazer o push ainda, é um projeto que não havia sido postado o desenvolvimento, somente a build final).
 
 ## Tecnologias
 - React
