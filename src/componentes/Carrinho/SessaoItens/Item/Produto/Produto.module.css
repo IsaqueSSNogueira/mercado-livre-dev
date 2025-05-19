@@ -1,0 +1,303 @@
+
+
+/* produto */
+.produtoContainer {
+    padding:25px 30px;
+    display: flex;
+    gap:15px;
+    align-items: flex-start;
+    border-bottom:1px solid lightgray;
+}
+
+.itemImg {
+    width:70px;
+    grid-area: img;
+}
+
+
+/* .descricao e opcoes */
+
+.descricaoEOpcoes {
+    margin-left: 5px;
+    width:380px;
+    grid-area: produto;
+}
+
+
+.descricaoEOpcoes h4 {
+    font-weight: 600;
+}
+
+.descricaoVariacoes {
+    color:rgb(151, 151, 151);
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.listaOpcoes {
+    margin-top:10px;
+    display: flex;
+}
+
+.listaOpcoes li {
+    color:#3483FA;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding:3px 5px;
+}
+
+.listaOpcoes .primeiraOpcao {
+    padding:3px 5px 3px 0px;
+}
+
+.listaOpcoes .utlimaOpcao {
+    padding:3px 0px 3px 5px;
+}
+
+
+/* total */
+
+.valorTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    grid-area: valor;
+    padding-left: 10px;
+}
+
+.valorTotal {
+    display: flex;
+    align-items: flex-start;
+}
+
+.valorTotal span {
+    font-size: 1.2rem;
+}
+
+.valorTotal .valorReais {
+    margin-left: 5px;
+}
+
+.valorTotal .valorCentavos {
+    font-size: 0.8rem;
+    margin-top: 2px;
+}
+
+
+/* media queries - responsivo */
+
+@media only screen and (min-width:1031px) and (max-width:1130px){
+
+    .listaOpcoes li {
+        font-size: 0.8rem;
+        padding:4px;
+    }
+    
+    .produtoContainer {
+        padding:25px 25px;
+    }
+
+    
+
+}
+
+@media only screen and (min-width:800px) and (max-width:1000px){
+
+}
+
+@media only screen and (max-width:730px){
+
+    .listaOpcoes li {
+        display: none;
+    }
+
+    .descricaoEOpcoes {
+        width: max-content;
+    }
+    
+    .opcaoResponsivo {
+        display: block !important;
+    }
+    
+    .valorTotalContainer {
+        flex-grow: 0;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width:600px){
+
+    .produtoContainer {
+        padding:15px 30px;
+        border-bottom:1px solid lightgray;
+        position: relative;
+        display: grid;
+        grid-template-areas: 'img produto ' 'qtd produto';
+        grid-template-columns: max-content;
+    }
+
+    .itemImg {
+        width:65px;
+        margin-left: 18px;
+        border: 1px solid lightgray;
+        padding:  5px 5px 5px 10px;
+        box-sizing: content-box;
+        border-radius: 4px;
+        align-self:  center;
+    }
+
+    .listaOpcoes li {
+        display: none;
+    }
+
+    .descricaoEOpcoes {
+        width:max-content;
+        margin: 10px 0 0 8%;
+    }
+    
+    .opcaoResponsivo {
+        display: block !important;
+    }
+
+    .valorTotalContainer {
+        position: absolute;
+        top:25px;
+        right:30px;
+    }
+
+    .valorTotal span {
+        font-size:1.2rem !important;
+    }
+
+    .valorTotal .valorCentavos {
+        font-size:0.9rem !important;
+        margin-top: 3px;
+    }
+
+}
+
+
+@media only screen and (max-width:500px){
+
+    .produtoContainer {
+        grid-template-columns: max-content;
+    }
+    
+    .itemImg {
+        width:65px;
+        margin-left: 5px;
+    }
+
+    .descricaoEOpcoes {
+        width:max-content;
+    }
+
+    .produtoContainer {
+        padding:15px 20px;
+    }
+
+    .descricaoEOpcoes {
+        margin:5px 0 0 10px;
+    }
+
+    .descricaoEOpcoes h4 {
+        font-size: 0.9rem;
+    }
+
+    .descricaoVariacoes {
+        font-size: 0.8rem;
+    }
+
+    .listaOpcoes li {
+        font-size: 0.75rem;
+    }
+
+    .valorTotalContainer {
+        position: absolute;
+        top:20px;
+        right:20px;
+    }
+
+    .valorTotal span {
+        font-size:1rem !important;
+    }
+
+    .valorTotal .valorReais {
+        margin-left: 1px;
+    }
+
+    .valorTotal .valorCentavos {
+        font-size:0.85rem !important;
+        margin-top: 1px;
+    }
+
+}
+
+
+
+@media only screen and (max-width:420px){
+
+    .produtoContainer {
+        padding:15px 20px;
+    }
+
+    .descricaoEOpcoes {
+        margin:5px 0 0 10px;
+    }
+
+    .descricaoEOpcoes h4 {
+        font-size: 0.9rem;
+    }
+
+    .descricaoVariacoes {
+        font-size: 0.8rem;
+    }
+
+    .listaOpcoes li {
+        font-size: 0.75rem;
+    }
+
+    .valorTotalContainer {
+        position: absolute;
+        top:20px;
+        right:20px;
+    }
+
+    .valorTotal span {
+        font-size:1rem !important;
+    }
+
+    .valorTotal .valorReais {
+        margin-left: 1px;
+    }
+
+    .valorTotal .valorCentavos {
+        font-size:0.85rem !important;
+        margin-top: 1px;
+    }
+}
+
+
+@media only screen and (max-width:380px){
+
+    
+    .descricaoEOpcoes {
+        margin:5px 0 0 0px;
+    }
+
+    .valorTotalContainer {
+        position: absolute;
+        top:unset;
+        bottom:10px;
+        right:20px;
+    }
+    .valorTotal span {
+        font-size:0.95rem !important;
+    }
+    
+    .valorTotal .valorCentavos {
+        font-size:0.7rem !important;
+        margin: 1.5px 0 0 1px;
+    }
+}

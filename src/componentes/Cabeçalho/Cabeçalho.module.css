@@ -1,0 +1,96 @@
+
+
+
+/* header */
+
+.cabeçalho-principal {
+    background-color: #FFE600;
+    padding: 10px 40px 8px;
+    display:grid;
+    grid-template-areas: 'logo search anuncios' 'envio nav nav';
+    gap:3px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+
+/* media queries - responsivo */
+
+@media only screen and (max-width:600px){
+
+}
+
+@media only screen and (min-width:600px){
+
+}
+
+@media only screen and (max-width:730px){
+    
+    .cabeçalho-principal {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding:80px 30px 12px;
+        grid-template-columns:0;
+    }
+}
+
+
+@media only screen and (min-width:731px) and (max-width:850px){
+    
+    .cabeçalho-principal {
+        grid-template-areas: 'logo search hamburguerMenu';
+        padding:20px 30px;
+        grid-template-columns:22%;
+    }
+}
+
+
+@media only screen and (min-width:851px) and (max-width:1030px){
+
+    .cabeçalho-principal {
+        grid-template-areas: 'logo search hamburguerMenu';
+        grid-template-columns:24%;
+        padding:20px 30px;
+    }
+
+}
+
+@media only screen and (min-width:1031px) and (max-width:1100px){
+    
+    .cabeçalho-principal {
+        padding:8px 20px 8px 30px;
+    }
+
+    .logo img {
+        width:120px;
+        margin:5px;
+    }
+  
+}
+
+
+@media only screen and (min-width:1101px) and (max-width:1150px){
+    
+    .cabeçalho-principal{
+        padding:8px 10px 8px 30px;
+    }
+  
+}
+
+@media only screen and (min-width:1151px) and (max-width:1200px){
+    
+    .cabeçalho-principal{
+        padding:8px 20px 8px 40px;
+    }
+  
+}
+
+
+@media only screen and (min-width:1200px){
+
+  
+}

@@ -1,0 +1,145 @@
+
+
+/* search */
+
+.search-div {
+    width:600px;
+    height:40px;
+    background-color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    grid-area: search;
+}
+
+.search-input {
+    width:100%;
+    height:100%;
+    padding: 0 35px 0 20px;
+    border:none;
+    outline:none;
+    color:rgb(103, 102, 102);
+    font-size: 0.9rem;
+}
+
+.search-input::placeholder {
+    color:gray;
+}
+
+/* parei aqui, vai ser meu primeiro uso de props, states e funções */
+.search-input:focus .search-div {
+    outline:blue 1px solid;
+}
+
+.search-button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50px;
+    height: 100%;
+    cursor: pointer;
+    background-color: white;
+}
+
+.search-button-icon:focus {
+    outline:#1589FF 1.5px solid;
+}
+
+.search-icon {
+    width:15px;
+}
+
+
+
+
+/* media queries - responsivo */
+
+
+@media only screen and (max-width:850px){
+    
+    .search-div {
+        width:135%;
+        height:45px;
+        margin:0 5px;
+    }
+
+    .search-input {
+        padding-left:20px !important;
+    }
+}
+
+
+@media only screen and (max-width:730px){
+
+    .search-div {
+        width:135%;
+        height:45px;
+        align-self: center;
+        position: relative;
+        background-color: transparent;
+        border-radius: 20px;
+    }
+
+    .search-input {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 20px 0 0 20px;
+        padding-left:30px;
+        font-size: 0.8rem;
+    }
+
+    .search-button-icon {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 0 20px 20px 0;
+    }
+
+    .search-icon {
+        width:16px;
+    }
+
+    .search-div::before {
+        content:'';
+        width: 200%;
+        height: 1px;
+        position: absolute;
+        top:-18px;
+        left:-70px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+        
+    }
+
+}
+
+
+@media only screen and (min-width:851px) and (max-width:1030px){
+
+    .search-div {
+        width:140%;
+        margin:0 5px;
+        height:45px;
+    }
+
+    .search-input {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media only screen and (min-width:1030px) and (max-width:1200px){
+
+    .search-div {
+        width:500px;
+        margin:0 10px;
+        height:35px;
+    }
+
+    .search-input {
+        font-size: 0.85rem;
+    }
+
+}
+
+@media only screen and (min-width:1200px){
+
+
+}

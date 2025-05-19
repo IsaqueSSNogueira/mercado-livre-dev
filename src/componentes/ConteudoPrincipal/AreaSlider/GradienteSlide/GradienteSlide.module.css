@@ -1,0 +1,31 @@
+
+
+.gradienteSlide {
+    width: 100vw;
+    height: 70px; /*120px no original */
+    background: linear-gradient(to top, #EBEBEB 0%, transparent 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    cursor:default;
+}
+
+
+
+/* media queries */ 
+
+@media only screen and (max-width:900px){
+
+    .gradienteSlide {
+        height: 40px;
+        background: linear-gradient(to top, rgba(235, 235, 235, 0.9) 0%, transparent 100%);
+    }
+}
+
+@media only screen and (max-width:730px){
+
+    .gradienteSlide {
+        display: none;
+    }
+}

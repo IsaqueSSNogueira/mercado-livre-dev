@@ -1,0 +1,51 @@
+
+
+/*menu normal*/
+.perfil {
+    width:100%;
+    height:60px;
+    padding:10px 20px !important;
+}
+
+.perfil:hover {
+    background-color: rgb(243, 242, 242);
+}
+
+
+.perfil-circulo-iniciais-usuário {
+    width:40px;
+    height: 40px;
+    border: 1px solid blue;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1rem;
+    position: relative;
+}
+
+.perfil-user {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color:black;
+    margin-left:5px;
+}
+
+.perfil-meu-perfil {
+    font-size: 0.85rem;
+    color:rgb(52, 51, 51);
+    display:flex;
+    align-items: center;
+    gap:5px;
+}
+
+.perfil-meu-perfil-icon {
+    font-size: 0.6rem;
+}
+
+.meli-icon {
+    width:35px;
+    position: absolute;
+    bottom:-5px;
+}

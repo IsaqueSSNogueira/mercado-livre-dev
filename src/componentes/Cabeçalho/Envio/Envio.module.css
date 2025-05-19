@@ -1,0 +1,92 @@
+
+
+/* Envio */
+
+.envio-container {
+    display: grid;
+    width:165px;
+    grid-template-areas: "local enviar enviar enviar" "local city city city";
+    padding:5px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, background-color 2s ease;
+    grid-area:envio;
+    cursor: pointer;
+}
+
+.envio-container:hover {
+    box-shadow: 0 0 0 0.1px black;
+}
+
+.localizacao-icone {
+    width:25px;
+    grid-area:local;
+}
+
+.dados-envio {
+    margin-top:5px;
+}
+
+.enviar-para {
+    color:DarkSlateGray;
+    font-size: 0.7rem;
+}
+
+.city {
+    color:rgb(40, 40, 40);
+    font-size: 0.8rem;
+    grid-area:city;
+}
+
+
+
+
+/* media queries - responsivo */
+
+@media only screen and (max-width:600px){
+
+
+}
+
+@media only screen and (min-width:600px){
+
+
+}
+
+@media only screen and (min-width:768px){
+
+
+}
+
+@media only screen and (max-width:1030px){
+
+    .envio-container  {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width:992px) and (max-width:1200px){
+
+    .envio-container {
+        width:140px;
+        padding:5px 10px;
+    }
+
+    .localizacao-icone {
+        width:20px;
+    }
+
+    .enviar-para {
+        font-size: 0.65rem;
+    }
+
+    .city {
+        font-size:0.75rem;
+    }
+    
+}
+
+@media only screen and (min-width:1200px){
+
+
+}

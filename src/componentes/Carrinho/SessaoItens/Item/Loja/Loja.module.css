@@ -1,0 +1,79 @@
+
+
+
+/* loja */
+
+.lojaContainer {
+    padding:18px 25px;
+    display: flex;
+    align-items: center;
+    gap:15px;
+    border-bottom:1px solid lightgray;
+}
+
+.lojaContainer h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.nomeLoja {
+    text-transform: uppercase;
+}
+
+
+.iconCheck {
+    color:#3483FA;
+    font-size: 1.1rem;
+}
+
+
+
+
+/* media queries - responsivo */
+
+@media only screen and (min-width:800px) and (max-width:1000px){
+
+}
+
+@media only screen and (max-width:800px){
+    
+    .lojaContainer {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:730px){
+
+    .lojaContainer {
+        padding:10px 25px;
+    }
+
+    .lojaContainer h3 {
+        font-size: 0.95rem;
+    }
+
+}
+
+@media only screen and (max-width:600px){
+
+    .lojaContainer {
+        padding:6px 25px;
+    }
+
+    .lojaContainer h3 {
+        font-size: 0.85rem;
+    }
+}
+
+
+@media only screen and (max-width:380px){
+
+    .lojaContainer {
+        padding:6px 25px;
+    }
+
+    .lojaContainer h3 {
+        font-size: 0.8rem;
+    }
+}
+

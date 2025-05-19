@@ -1,0 +1,13 @@
+
+
+.lista-links li {
+    padding:8px 15px;
+}
+
+.lista-links li:hover {
+    background-color: #F5F5F5;
+}
+
+.lista-links li a {
+    color:#555;
+}

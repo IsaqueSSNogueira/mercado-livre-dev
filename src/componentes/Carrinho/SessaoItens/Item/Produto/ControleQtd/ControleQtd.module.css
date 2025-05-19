@@ -1,0 +1,113 @@
+
+
+.containerControleQts {
+    width:120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+    grid-area: qtd;
+}
+
+.areaControleQts {
+    border: 1.5px solid darkgray;
+    width:110px;
+    height:30px;
+    padding:0 10px;
+    border-radius:5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.areaControleQts:hover {
+    border: 1.5px solid rgb(96, 96, 96);
+    cursor: pointer;
+}
+
+.botaoQtd {
+    color:#3483FA;
+    font-size: 1.5rem;
+    font-weight: 200;
+    cursor:pointer;
+    user-select: none;
+}
+
+.botaoQtd:active {
+    color:rgb(0,0,0);
+}
+
+.botaoMenos {
+    align-self: flex-end;
+    color:darkgray;
+}
+
+.valorQtd {
+    font-size: 0.8rem;
+}
+
+.qtdDisponivel {
+    color:gray;
+    font-size: 0.75rem;
+}
+
+
+/*media queries*/
+
+
+@media only screen and (max-width:730px){
+ 
+    .containerControleQts {
+        flex-grow: 1;
+        gap:5px;
+    }
+}
+
+
+@media only screen and (max-width:600px){
+
+    .areaControleQts {
+        width:110px;
+        height:25px;
+    }
+
+    .containerControleQts {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:15px;
+        grid-area: qtd;
+    }
+
+    .qtdDisponivel {
+        display: none;
+    }
+
+    .botaoQtd {
+        color:#3483FA;
+        font-size: 1.4rem !important;
+    }
+
+    .botaoMenos {
+        align-self: center;
+        color:darkgray;
+        margin-bottom: 2.5px;
+    }
+
+}
+
+
+@media only screen and (max-width:500px){
+
+    .areaControleQts {
+        width:85px;
+        height:25px;
+    }
+
+    .containerControleQts {
+        align-items: flex-start;
+        margin-left: 5px;
+        width: max-content;
+    }
+}

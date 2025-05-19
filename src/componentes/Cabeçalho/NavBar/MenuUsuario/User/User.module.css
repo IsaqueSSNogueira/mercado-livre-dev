@@ -1,0 +1,74 @@
+
+
+.user-intem {
+    position: relative;
+}
+
+.circulo-iniciais-usuário {
+    width:25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:0.7rem;
+}
+
+.link-user {
+    gap:4px;
+    display: flex;
+    align-items: center;
+}
+
+.seta-baixo-icone {
+    opacity:0.4;
+}
+
+
+
+
+
+/* media queries - responsivo */
+
+@media only screen and (max-width:600px){
+
+
+}
+
+@media only screen and (min-width:600px){
+
+
+}
+
+@media only screen and (min-width:768px){
+
+
+}
+
+@media only screen and (min-width:992px) and (max-width:1100px){
+
+    
+    .circulo-iniciais-usuário {
+        display: none; /* caso eu queira manter, eu não vou apagar os estilos*/
+    }
+
+}
+
+@media only screen and (min-width:1100px) and (max-width:1200px){
+    
+    .circulo-iniciais-usuário {
+        width:20px;
+        height: 20px;
+        padding:4px;
+        font-size:0.55rem;
+        text-align: center;
+        display: block; /* caso eu queira manter, eu não vou apagar os estilos*/
+    }
+  
+}
+
+@media only screen and (min-width:1200px){
+
+
+}

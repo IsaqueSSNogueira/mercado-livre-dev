@@ -1,0 +1,98 @@
+
+
+.rodape-principal {
+    padding:10px 40px 30px;
+}
+
+.nav-footer-links ul {
+    display:flex;
+    gap:18px;
+}
+
+.nav-footer-links a {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color:#3a3a3a;
+}
+
+.icon-acessibilidade {
+    font-size: 1rem;
+    margin-right:5px;
+    color:#bcbcbc;
+}
+
+.texto-sobre p {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color:#7b7b7b;
+    margin-top: 5px;
+}
+
+
+
+
+/* media queries - responsivo */
+
+@media only screen and (max-width:600px){
+
+
+}
+
+@media only screen and (max-width:800px){
+
+    .nav-footer-links {
+        display: none;
+    }    
+
+}
+
+@media only screen and (min-width:801px) and (max-width:1000px){
+
+    .rodape-principal {
+        padding:10px 20px 30px;
+    }
+    
+    .nav-footer-links ul {
+        display:flex;
+        gap:18px;
+    }
+
+    .nav-footer-links a {
+        font-size: 0.8rem;
+        font-weight: 400;
+        color:#3a3a3a;
+        text-transform: capitalize;
+    }
+
+    .naoEssencial {
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width:1001px) and (max-width:1200px){
+
+    
+
+    .rodape-principal {
+        padding:10px 40px 30px;
+    }
+    
+    .nav-footer-links ul {
+        gap:22px;
+        margin-bottom: 5px;
+    }
+
+    .nav-footer-links a {
+        text-transform: capitalize;
+    }
+
+    .naoEssencial {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:1200px){
+
+
+}

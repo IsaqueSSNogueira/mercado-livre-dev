@@ -1,0 +1,22 @@
+
+
+.linkCart {
+    color:rgb(54, 52, 66);
+    padding:10px;
+    margin-left: 25px;
+    font-size: 1.3rem;
+    transition: all 0.5s ease;
+}
+
+.linkCart:hover {
+    color:rgb(95, 92, 117);
+}
+
+
+
+@media only screen and (min-width:731px) {
+
+    .linkCart {
+        display: none;
+    }
+}

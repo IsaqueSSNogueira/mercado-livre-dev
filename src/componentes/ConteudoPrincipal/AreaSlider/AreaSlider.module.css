@@ -1,0 +1,50 @@
+
+
+
+.containerSlidePrincipal {
+    width:100vw;
+    height:400px;
+    overflow: hidden;
+    margin-bottom: 200px; /* devido ao carrosel de itens que está com position */
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+/* media queries */ 
+
+@media only screen and (max-width:900px){
+
+    .containerSlidePrincipal {
+        height: 320px;
+        margin-bottom: 20px !important;
+    }
+}
+
+@media only screen and (max-width:730px){
+
+    
+    .containerSlidePrincipal {
+        height: 240px;
+        margin-bottom: 30px !important;
+        margin-top:10px;
+    }
+}
+
+@media only screen and (max-width:550px){
+
+    .containerSlidePrincipal {
+        height: 220px;
+        margin-bottom: 20px !important;
+    }
+}
+
+@media only screen and (max-width:480px){
+
+    .containerSlidePrincipal {
+        height: 160px;
+        margin-bottom: 20px !important;
+    }
+}
+

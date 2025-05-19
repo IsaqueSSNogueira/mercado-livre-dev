@@ -1,0 +1,157 @@
+
+.div-setas {
+    width:85px;
+    height:85px;
+    background-color:white;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    color:rgba(4, 4, 246, 0.6);
+    cursor:pointer;
+    opacity: 0.7;
+    transition:all 0.5s ease;
+    position: absolute;
+    top:35%;
+    font-size: 1.2rem;
+}
+
+.div-setas:hover {
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.div-seta-esquerda {
+    left:-35px;
+}
+
+.div-seta-direita {
+    right: -35px;
+}
+
+.seta-esquerda {
+    justify-content: flex-end;
+    margin-left:65%;
+}
+
+.seta-direita {
+    justify-content: flex-start;
+    margin-left:20%;
+}
+
+
+
+@media only screen and (max-width:900px){
+
+    
+    .div-setas {
+        width:75px;
+        height:75px;
+        font-size: 1.05rem;
+    }
+
+        
+    .div-seta-esquerda {
+        left:-30px;
+    }
+
+    .div-seta-direita {
+        right: -30px;
+    }
+
+    .seta-esquerda {
+        margin-left:70%;
+    }
+
+    .seta-direita {
+        margin-left:16%;
+    }
+}
+
+@media only screen and (max-width:730px){
+  
+    .div-setas {
+        width:65px;
+        height:65px;
+        font-size: 0.9rem;
+    }
+
+        
+    .div-seta-esquerda {
+        left:-30px;
+    }
+
+    .div-seta-direita {
+        right: -30px;
+    }
+
+    .seta-esquerda {
+        margin-left:70%;
+    }
+
+    .seta-direita {
+        margin-left:16%;
+    }
+}
+
+@media only screen and (max-width:550px){
+
+    .div-setas {
+        width:60px;
+        height:60px;
+        font-size: 0.8rem;
+    }
+
+        
+    .div-seta-esquerda {
+        left:-26px;
+    }
+
+    .div-seta-direita {
+        right: -26px;
+    }
+
+    .seta-esquerda {
+        margin-left:70%;
+    }
+
+    .seta-direita {
+        margin-left:15%;
+    }
+
+}
+
+
+@media only screen and (max-width:480px){
+
+    .div-setas {
+        width:45px;
+        height:45px;
+        font-size: 0.9rem;
+        opacity: 0.8;
+
+    }
+
+        
+    .div-seta-esquerda {
+        left:-20px;
+    }
+
+    .div-seta-direita {
+        right: -20px;
+    }
+
+    .seta-esquerda {
+        position: absolute;
+        top:50%;
+        left:0%;
+        transform: translate(-50%, -50%);
+    }
+
+    .seta-direita {
+        position: absolute;
+        top:50%;
+        left:0%;
+        transform: translate(50%, -50%);
+    }
+}

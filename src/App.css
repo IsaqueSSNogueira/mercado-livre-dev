@@ -1,0 +1,63 @@
+
+/* propriedades */
+
+/* z-index
+    menus, setas para carrosel/slide : 10;
+*/
+
+/* ::before && ::after
+    menus: 
+        **::before -> área hoverável;
+        **::after -> dropdown arrow;
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: none;
+}
+
+body {
+    overflow-x: hidden !important;
+    user-select: none; /*só para o portfólio*/
+    height: max-content;
+}
+
+
+
+/* media queries - responsivo */
+
+@media only screen and (max-width:600px){
+
+
+}
+
+@media only screen and (min-width:600px){
+
+
+}
+
+@media only screen and (min-width:768px){
+
+
+}
+
+@media only screen and (min-width:992px) and (max-width:1200px){
+
+
+}
+
+@media only screen and (min-width:1200px){
+
+
+}

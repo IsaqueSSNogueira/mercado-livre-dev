@@ -1,0 +1,75 @@
+
+.divMenu {
+    position:absolute;
+    top:130%;
+    left:-15%;
+    z-index: 10;
+    background-color: #333333;
+    padding:20px 0 10px;
+    color:white;
+    border-radius: 5px;
+}
+
+/* área hoverável */
+.divMenu::before {
+    content:'';
+    width:100%;
+    height:15px;
+    background-color:transparent;
+    position: absolute;
+    top:-10px;
+    left:0;
+}
+
+.setaDropdown {
+    width:20px;
+    height: 20px;
+    background-color: #333333;
+    position: absolute;
+    top:-5px;
+    left:35%;
+    transform: rotate(45deg);
+}
+
+
+.lista-menu {
+    max-height: 400px;
+    overflow: auto;
+}
+
+
+
+/* inicio barras de rolagem */
+.lista-menu::-webkit-scrollbar {
+    width: 10px;
+}
+  
+.lista-menu::-webkit-scrollbar-track {
+    background-color: rgb(217, 214, 214);
+    margin: 2px;
+}
+  
+.lista-menu::-webkit-scrollbar-thumb {
+    /* background-color: #474646; */
+    background-color: #393939;
+    border: 2px solid rgb(217, 214, 214);
+}
+
+.lista-menu::-webkit-scrollbar-thumb:active {
+    background-color: #5b5b5b;
+}
+
+
+/* fim barras de rolagem */
+
+
+.divMenu li a {
+    color: white;
+    width: 230px;
+    padding:10px 30px;
+}
+
+.divMenu li a:hover {
+    background-color: #3483FA;
+    color:white;
+}

@@ -1,0 +1,56 @@
+
+/* Anuncios */
+
+.anuncios {
+    grid-area: anuncios;
+}
+
+.anuncios-img {
+    width:350px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
+}
+
+.anuncios-img:hover {
+    opacity: 1;
+}
+
+
+
+/* media queries - responsivo */
+
+@media only screen and (max-width:600px){
+
+
+}
+
+@media only screen and (min-width:600px){
+
+
+}
+
+@media only screen and (min-width:768px){
+
+
+}
+
+@media only screen and (max-width:1030px){
+
+    .anuncios-img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1200px){
+
+    .anuncios-img {
+        width:320px;
+    }
+
+}
+
+@media only screen and (min-width:1200px){
+
+
+}

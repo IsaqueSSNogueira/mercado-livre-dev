@@ -1,0 +1,125 @@
+
+
+
+
+.listaValores {
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+}
+
+.listaValores li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.produto, .frete {
+    color:rgb(67, 67, 67);
+    font-size: 0.8rem;
+}
+
+.cupom {
+    color: #3483FA;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor:pointer;
+    width: max-content;
+}
+
+.cupom:hover {
+    color: #5095fc;
+}
+
+.valorTotal {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.listaValores li span {
+    display: inline-block;
+}
+
+.valor {
+    display: flex;
+    align-self: flex-start;
+}
+
+.valorCentavos {
+    font-size: 0.5rem;
+    margin-top:3px;
+}
+
+
+
+
+@media only screen and (max-width:1030px){
+
+    .listaValores {
+        padding:15px 35px;
+    }
+        
+    .produto, .frete {
+        font-size: 0.9rem;
+    }
+
+    .cupom {
+        font-size: 0.85rem;
+    }
+
+    .valorTotal {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+}
+
+
+@media only screen and (min-width:601px) and (max-width:730px){
+
+    
+    .listaValores {
+        padding:12px 30px;
+    }
+
+    .valorTotal {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+}
+
+
+@media only screen and (max-width:600px){
+
+    
+    .listaValores {
+        padding:14px 0 12px;
+        width:75%;
+        align-self: center;
+    }
+
+    .valorTotal {
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin-top: 5px;
+        margin-right: 3px;
+    }
+}
+
+
+@media only screen and (max-width:930px) and (max-height:450px){
+
+    .listaValores {
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+
+    .valorTotal {
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin-top: 5px;
+        margin-right: 3px;
+    }
+}

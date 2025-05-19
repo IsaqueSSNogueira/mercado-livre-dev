@@ -1,0 +1,11 @@
+
+
+
+.principal {
+    background-color:#EBEBEB;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}

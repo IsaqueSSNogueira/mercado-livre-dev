@@ -1,0 +1,146 @@
+
+
+.freteGratisContainer {
+    padding:15px 20px;
+    background-color: #F5F5F5;
+}
+
+.freteGraficContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barraRange {
+    width:88%;
+    height:5px;
+}
+
+.freteGratisSpan {
+    font-size: 0.8rem;
+    color: rgb(74, 73, 73);
+    font-weight: 600;
+}
+
+
+/* frete gratis info */
+
+.freteGratisInfo{
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+    hyphens: auto;
+    text-justify: inter-word;
+}
+
+.nomeLoja {
+    text-transform: uppercase;
+    font-weight: 600;
+    hyphens: auto;
+}
+
+.linkVendendor {
+    color:#3483FA;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.iconSeta {
+    font-size: 0.6rem;
+    margin-bottom: 1px;
+}
+
+
+
+/* media queries - responsivo */
+
+@media only screen and (max-width:1200px){
+
+    .barraRange {
+        width:85%;
+    }
+}
+
+
+@media only screen and (max-width:1100px){
+
+    .barraRange {
+        width:84%;
+    }
+}
+
+@media only screen and (max-width:1030px){
+
+    .barraRange {
+        width:88%;
+    }
+}
+
+@media only screen and (max-width:800px){
+
+    .barraRange {
+        width:86%;
+    }
+}
+
+@media only screen and (max-width:730px){
+
+    .barraRange {
+        width:82%;
+    }
+}
+
+@media only screen and (max-width:600px){
+
+    .freteGratisContainer {
+        padding:8px 20px;
+    }
+
+    .linkVendendor {
+        margin-top: 5px;
+        font-size: 0.8rem;
+    }
+
+    .freteGratisInfo{
+        font-size: 0.75rem;
+        padding: 8px 0;
+    }
+    
+    .nomeLoja{
+        font-size: 0.7rem;
+    }
+}
+
+
+@media only screen and (max-width:580px){
+
+    .barraRange {
+        width:78%;
+    }
+}
+
+@media only screen and (max-width:500px){
+
+    .freteGraficContainer {
+        display: none;
+    }
+
+    .freteGratisContainer {
+        padding:3px 20px;
+    }
+
+    .freteGratisContainer {
+        border-top:1px solid rgb(234, 234, 234);
+    }
+}
+
+
+@media only screen and (max-width:450px){
+
+    .barraRange {
+        width:70%;
+    }
+}

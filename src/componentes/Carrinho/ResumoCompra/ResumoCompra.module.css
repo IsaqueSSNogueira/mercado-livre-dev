@@ -1,0 +1,241 @@
+
+
+.containerResumoCompra {
+    width:360px;
+    background-color:white;
+    border-radius:5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    transition: width 0.5s ease, right 0.5s ease !important;
+}
+
+
+.tituloContainer {
+    border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+.titulo {
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding:20px;
+    color:rgb(61, 61, 61);
+}
+
+
+.botaoComprar {
+    width:85%;
+    padding:14px 0;
+    margin:0px 20px 25px;
+    background-color: #3483FA;
+    border-radius:5px;
+    color:white;
+    font-weight:600;
+    font-size: 0.9rem;
+    align-self: center;
+    cursor:pointer;
+}
+
+.botaoComprar:hover {
+    background-color: #2968C8;
+}
+
+
+
+/*js*/
+
+.acima1030Fixed{
+    position: fixed !important;
+    top:135px !important;
+    right:20px !important;
+    transition: right 0.3s ease, box-shadow 1s ease;
+}
+
+
+.acima1030Absolute{
+    position: absolute !important;
+    bottom:60px !important;
+    right:30px !important;
+    transition: right 0.3s ease, box-shadow 1s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+}
+
+
+/*1030*/
+.fixed1030 {
+    position: fixed !important;
+    bottom: 10px !important;
+    right: 10px !important;
+}
+
+.absolute1030 {
+    position: absolute !important;
+    bottom:75px !important;
+    right: 38px !important;
+    width: 415px !important;
+}
+
+
+/*730*/
+.fixed730 {
+    position: fixed !important;
+    bottom:10px !important;
+    right:8px !important;
+}
+.absolute730 {
+    position: absolute !important;
+    bottom:70px !important;
+    right: 35px !important;
+}
+
+
+
+/*600*/
+.fixed600 {
+    width:92vw !important;
+    position: fixed !important;
+    bottom:0px !important;
+    right:50% !important;
+    transform: translateX(-50%);
+}
+.absoluted600 {
+    position: absolute !important;
+    bottom:50px !important;
+    right: 50% !important;
+}
+
+
+
+/*500*/
+.fixed500 {
+    position: fixed;
+    right: 0;
+    bottom:0;
+}
+
+
+
+/* media queries - responsivo */
+
+@media only screen and (max-width:1030px){
+
+    .containerResumoCompra {
+        align-self: flex-end;
+        width:400px;
+        position: fixed;
+        bottom:10px;
+        right:8px;
+        z-index: 16;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: right 0.5s ease;
+    }
+
+    .titulo {
+        padding:15px 30px;
+    }
+
+    .botaoComprar {
+        width:85%;
+        padding:12px 0;
+        margin:0px 0px 15px;
+        background-color: #3483FA;
+        border-radius:5px;
+        color:white;
+        font-weight:600;
+        font-size: 0.9rem;
+        align-self: center;
+        cursor:pointer;
+    }
+
+    .containerResumoCompra {
+        opacity: 0.95 !important;
+    }
+
+    .containerResumoCompra:hover {
+        opacity: 1 !important;
+    }
+
+}
+
+
+
+@media only screen and (max-width:730px){
+
+    .containerResumoCompra {
+        width:350px;
+        position: fixed;
+        bottom:7px;
+        z-index: 16;
+    }
+
+    .botaoComprar:hover {
+        background-color: #1a75fe;
+    }
+}
+
+@media only screen and (max-width:600px){
+
+    .containerResumoCompra {
+        width:86vw;
+        position: fixed;
+        left: 50%;
+        bottom:0;
+        transform: translateX(-50%);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        opacity: 1 !important;
+        border-radius: 0;
+        transition: width 0.5s ease;
+    }
+    
+    .tituloContainer {
+        display: none;
+    }
+
+    .botaoComprar {
+        width:75%;
+        padding:12px 0;
+        font-size: 0.85rem;
+    }
+}
+
+@media only screen and (max-width:500px){
+
+    .containerResumoCompra {
+        width:100vw !important;
+        position: fixed;
+        right: 0;
+        bottom:0;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        opacity: 1 !important;
+        transition: width 0s ease;
+    }
+
+    .botaoComprar {
+        font-size: 0.8rem !important;
+    }
+
+}
+
+
+@media only screen and (max-width:930px) and (max-height:450px){
+        
+
+    .containerResumoCompra {
+        width:330px;
+    }
+
+    .titulo {
+        font-weight: 600;
+        font-size: 0.95rem;
+        padding:10px 25px;
+        color:rgb(61, 61, 61);
+    }
+
+    .botaoComprar {
+        width:85%;
+        padding:10px 0;
+        margin:0px 20px 15px;
+        font-size: 0.85rem;
+    }
+
+}

@@ -1,0 +1,48 @@
+
+
+.navigator {
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-between;
+    grid-area: nav;
+}
+
+/* media queries - responsivo */
+
+@media only screen and (max-width:600px){
+
+
+}
+
+@media only screen and (min-width:600px){
+
+
+}
+
+@media only screen and (min-width:768px){
+
+
+}
+
+@media only screen and (max-width:1030px){
+
+    .navigator {
+        display: none;
+    }
+
+}
+
+
+@media only screen and (min-width:992px) and (max-width:1200px){
+
+    .navigator {
+        justify-content: space-between;
+        width:100%;
+    }
+
+}
+
+@media only screen and (min-width:1200px){
+
+
+}

@@ -1,0 +1,126 @@
+
+
+
+.areaDefinirEnvio {
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100vw;
+    height:100vh;
+    z-index: 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerDefinirEnvio {
+    width:670px;
+    height: 97%;
+    background-color: white;
+    border-radius: 5px;
+    overflow-y: scroll;
+    padding:30px;
+    padding-bottom:100px;
+}
+
+
+/* titulo */
+
+
+.containerTitulo {
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+}
+
+.containerTitulo h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:rgb(38, 38, 38);
+}
+
+.containerTitulo p {
+    font-size: 0.85rem;
+    color:rgb(168, 168, 168);
+}
+
+
+
+/* escolher endereço */
+
+.containerEscolherEndereço {
+    margin-top: 25px;
+}
+
+.containerEscolherEndereço h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color:rgb(49, 49, 49);
+}
+
+
+/* meus endereços */
+
+.containerEnderecos {
+    border:1px solid rgb(239, 239, 239);
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.editarEndereco {
+    color:#4790fc;
+    padding:10px 25px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    border-top:1px solid rgb(239, 239, 239);
+    display: block;
+    cursor: pointer;
+}
+
+
+/**/
+
+.containerOutroEndereço h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color:rgb(49, 49, 49);
+    margin-top:25px;
+}
+
+
+/* botões finais */
+
+.containerBotoesFinais {
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.containerBotoesFinais button {
+    padding:7px 0;
+    width:135px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.containerBotoesFinais .cancelar {
+    margin-left:180px;
+    color:#4790fc;
+    background-color:#e5eefa;
+    cursor: pointer;
+}
+
+.containerBotoesFinais .salvar {
+    color:white;
+    background-color:#418af8;
+    cursor: pointer;
+}
+
+
+
+
